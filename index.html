@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Círculo de Fogo (Pacific Rim)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen active">
+            <h1>Círculo de Fogo: O Quiz Definitivo</h1>
+            <p>Teste seus conhecimentos sobre Jaegers, Kaijus e o Fosso das Marianas!</p>
+            <button id="start-btn" class="btn">Iniciar Missão</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span id="question-counter">Questão 1 de 20</span>
+                <span id="score-display">Pontos: 0</span>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text">Pergunta vai aqui</h2>
+                <div id="options-container" class="options-grid">
+                    </div>
+            </div>
+            <button id="next-btn" class="btn hidden">Próxima Questão</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h2>Missão Concluída!</h2>
+            <p id="final-message">Você pontuou X de 20.</p>
+            <div id="rank-display" class="rank-box">Patente: Ranger</div>
+            <button id="restart-btn" class="btn">Reiniciar Simulação</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
